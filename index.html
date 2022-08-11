@@ -10,26 +10,39 @@
 </head>
 <body>
     <header>
-
+        <img src="" alt="Logo da alura" class="logo">
     </header>
-
-    
-    <main>
-    <div class="container">
-    <input class="inputE" type="text" placeholder="Digite um texto">
-    </div>
-
-    <div>saassa</div>
-    
-    </main>
-
+ 
+    <main class="main">
+        <section>
+            <textarea class="input" cols="40" rows="6" placeholder="Digite seu texto..." ></textarea>
+            <div class="info">
+                <img src="./imgs/alert.png" class="alert">
+                <p class="detalhe">Apenas letras minúsculas e sem acento.</p>  
+            </div>
+            <div class="botoes">
+                <button  class="encriptar" onclick="btnEncriptar()">Criptografar</button>
+                <button  class="desencriptar" onclick="btnDesencriptar()">Descriptografar</button> 
+            </div>
+        </section>        
+           
+            <section class="escreva">
+                
+                <div class="ladoD">
+                    <textarea class="message" cols="15" rows="6"></textarea>
+                    <p class="texto1">Nenhuma mensagem encontrada</p>
+                     <button class="Copiar" onclick="btnCopy()">Copiar</button>
+                     <button class="Colar"  onclick="copiedText()" >Colar</button> 
+                    
+                </div>  
+             </section>    
     </main>
 
     <footer>
         <div class="footer-content">
             <ul class="socials">
-                <li><a href="#" class="githubImg"><img src="./imgs/github.png" alt=""></a></li>
-                <li><a href="#" class="linkedinImg"><img src="./imgs/linkedin.png" alt=""></a></li>
+                <li><a href="https://github.com/Azt1" class="githubImg"><img src="./imgs/github.png" alt=""></a></li>
+                <li><a href="https://www.linkedin.com/in/igor-alexandre-127153234/" class="linkedinImg"><img src="./imgs/linkedin.png" alt=""></a></li>
             </ul>
         </div>
         <div class="footer-bottom">
