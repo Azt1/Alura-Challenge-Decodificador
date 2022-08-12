@@ -5,36 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decodificador</title>
+    <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/footer.css">
 </head>
 <body>
     <header>
-        <img src="" alt="Logo da alura" class="logo">
+        <img src="./imgs/logo.png" alt="Logo da alura" class="logo">
     </header>
  
     <main class="main">
-        <section>
-            <textarea class="input" cols="40" rows="6" placeholder="Digite seu texto..." ></textarea>
-            <div class="info">
-                <img src="./imgs/alert.png" class="alert">
-                <p class="detalhe">Apenas letras minúsculas e sem acento.</p>  
-            </div>
-            <div class="botoes">
-                <button  class="encriptar" onclick="btnEncriptar()">Criptografar</button>
-                <button  class="desencriptar" onclick="btnDesencriptar()">Descriptografar</button> 
+        <section class="escreva1">
+            <div>
+                <textarea class="textoArea" placeholder="Digite seu texto..." ></textarea>
+                <div class="info">
+                    <img src="./imgs/alert.png" class="alert">
+                    <p class="detalhe">Apenas letras minúsculas e sem acento.</p>  
+                </div>
+                
+                <div class="botoes">
+                    <button  class="encriptar" onclick="btnEncriptar()">Criptografar</button>
+                    <button  class="desencriptar" onclick="btnDesencriptar()">Descriptografar</button> 
+                </div>
             </div>
         </section>        
            
-            <section class="escreva">
-                
-                <div class="ladoD">
-                    <textarea class="message" cols="15" rows="6"></textarea>
-                    <p class="texto1">Nenhuma mensagem encontrada</p>
-                     <button class="Copiar" onclick="btnCopy()">Copiar</button>
-                     <button class="Colar"  onclick="copiedText()" >Colar</button> 
+            <section class="escreva2">            
+                <div class="cesar">
+                    <div class="ladoD">
+                        <textarea class="message"></textarea>
+                        <img src="./imgs/High quality products 1 1.png" alt="Imagem boneco" class="imgBoneco">
+                        <h1>Nenhuma mensagem encontrada</h1>
+                        <p class="texto1">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                        <button class="Copiar" onclick="btnCopy()">Copiar</button>
                     
-                </div>  
+                    </div>  
+                </div>
              </section>    
     </main>
 

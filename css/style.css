@@ -15,38 +15,107 @@ body {
     
 }
 
-main{
+.escreva2{
+    position: static;
+    width: 210px;
+    font-family: 'Inter';
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #ffffff;
     display: flex;
-    margin-left: 80px;
-    margin-bottom: 50px;
+    flex-grow: 0;
+    margin: 16px 0px;
 }
 
-.alert {
-    width: 15px;
-    height: 15px
+.logo {
+    position: absolute;
+    left: 7%;
+    top: 5%;
+}
+
+.cesar {
+    background: #808080;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 29px;
+    height: 650px;
+    width: 400px;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+.ladoD {
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 350px;
+    height: 850px;
+}
+
+
+
+.encriptar{
+    position: relative;
+    width: 200px;
+    height: 80px;
+    border-radius: 15px;
+    top: 500px;
+    left: 250px;
+    background: #121214;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.desencriptar {
+    position: relative;
+    width: 200px;
+    height: 80px;
+    border-radius: 15px;
+    top: 500px;
+    left: 550px;
+    text-transform: uppercase;
+    background: #121214;
+    color: #ffffff;
+}
+
+.textoArea {
+    position: relative;
+    width: 680px;
+    height: 48px;
+    left: 240px;
+    top: 168px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    background: #808080;
+    border-radius: 15px;
+
+}
+
+::placeholder {
+    color: #ffffff;
 }
 
 .detalhe {
+    position: relative;
+    display: flex;
+    padding: 0px;
+    width: 350px;
+    height: 18px;
+    left: 0px;
+    top: 421px;
     color: #ffffff;
 }
 
-.escreva{
-    position: static;
-    width: 320px;
-    height: 49px;
-    left: 0px;
-    top: 74px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: normal;
-    font-weight: 340;
-    font-size: 16px;
-    line-height: 150%;
-    text-align: center;
-    color: #ffffff;
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
-    margin: 16px 0px;
-    }
+.alert {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: -30px;
+    top: 443px;
+}
 
+.botoes {
+    display: flex; 
+}
