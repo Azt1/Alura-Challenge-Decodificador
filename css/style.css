@@ -1,49 +1,65 @@
 * {
     padding: 0;
     margin: 0;
+    background-color: white;
+}
+
+
+
+html, body {
+    min-width: 100%;
+    min-height: 100%;
+
+    /* width: 100vw;
+    height: 100vh; */
+
 }
 
 body {
     background: url(../imgs/texture-bottom.jpg);
     display: flex;
-    height: 92vh;
-    width: 92vw;
+    flex-direction: column;
+    background-size: cover;
     min-height: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .logo {
-    padding: 50px;
+    margin: 40px 0 0 25px;
+    justify-content: center;
+    
 }
 
-.main {
+.container {
     display: flex;
     flex: 1;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1140px;
 }
 
 .escreva1 {
-    display: flex;
-    padding: 50px;
-    margin: 150px;
-
+    padding: 40px;
+    margin-right: 40px;
 }
 
 .textoArea {
-    font-family: 'Inter';
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
-    line-height: 150%;
+    font-size: 28px;
     background: #808080;
     border-radius: 15px;
-    padding: 10px;
-    width: 120%;
-    height: 60%;
+    height: 35%;
     outline: none;
+    resize: none;
+    border: none;
+    overflow: auto;
+    color: #ffffff;
+    cursor: default;
+    width: 100%;
 }
 
 ::placeholder {
@@ -56,8 +72,9 @@ body {
 }
 
 .alert {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
 }
 
 .detalhe {
@@ -68,16 +85,15 @@ body {
 }
 
 .botoes {
-    padding: 50px;
-    display: flex;
     justify-content: space-between;
-    margin: 40px;
-    width: 90%;
+    display: flex;
+    width: 100%;
 }
 
 .botoes :hover{
     background-color: #48f77f;
     border-radius: 10px; 
+    color: #000;
 }
 
 
@@ -88,6 +104,9 @@ body {
     text-transform: uppercase;  
     background: #121214;
     color: #ffffff;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .2s ease;
 }
 
 .encriptar{
@@ -97,15 +116,16 @@ body {
     background: #121214;
     color: #ffffff;
     text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .2s ease;
 }
 
 .caixa {
-    height: 800px;
-    width: 400px;
-    padding: 32px;
+    max-width: 400px;
+    min-height: 100%;
     background: #595858;
     border-radius: 20px;
-    margin: 15px;
     color: white;
     text-align: center;
 }
@@ -116,7 +136,65 @@ body {
 }
 
 .imgBoneco {
-    margin: 40px;
+    margin: 10px;
 }
 
+.texto1 {
+    margin-top: 10px;
+}
 
+.message {
+    background: transparent;
+    outline: none;
+    resize: none;
+    border: 0 none;
+    overflow: auto;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none; 
+    color: #ffffff;
+}
+
+/* @media (max-width: 768px) {
+
+    header {
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo {
+        margin: 10px 0 0 10px;
+        display: flex;
+    }
+
+    .container {
+        flex-direction: column;
+        min-width: 100%;
+    }
+
+    .escreva1 {
+        margin: 0;
+    }
+
+    .escreva2 {
+        min-width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .caixa {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .imgBoneco {
+        width: 250px;
+    }
+
+
+}
+
+ */
