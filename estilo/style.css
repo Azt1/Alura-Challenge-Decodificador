@@ -1,0 +1,235 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/imgs/texture-bottom.jpg);
+    min-width: 100%;
+    min-height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.logo {
+    margin: 40px 0 0 40px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+    justify-content: center;
+    border: solid 1px red;
+}
+
+.container-row-left {
+    border-radius: 15px;
+    padding: 4rem;
+    width: 750px;
+    height: 640px;
+    border: solid 1px white;
+}
+
+.container-textarea {
+    width: 500px;
+    height: 300px;
+    margin-bottom: 1rem;
+}
+
+.textoArea {
+    width: 120%;
+    background-image: url(/imgs/texture-bottom.jpg);
+    font-weight: 400;
+    font-size: 28px;
+    border-radius: 15px;
+    height: 35%;
+    outline: none;
+    resize: none;
+    border: none;
+    overflow: auto;
+    color: #ffffff;
+    cursor: default;
+    padding: 10px;
+}
+
+::placeholder {
+    color: #ffffff;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.alerta {
+    width: 15px;
+    height: 15px;
+}
+
+.botoes {
+    border: solid 1px red;
+    justify-content: space-between;
+    display: flex;
+    gap: 2rem;
+}
+
+.botoes :hover{
+    background-color: #48f77f;
+    color: #000;
+    transition: all 0.2s ease-out
+}
+
+.encriptar {
+    background-color: #121214;
+    color: #fff;
+    border-radius: 25px;
+    padding: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 200px;
+    height: 80px;
+    align-items: center;
+}
+
+.descriptografar {
+    background-color: #121214;
+    color: #fff;
+    border-radius: 25px;
+    padding: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 200px;
+    height: 80px;
+    align-items: center;
+}
+
+
+
+.container-row-right {
+    border: solid 1px white;
+    border-radius: 15px;
+    padding: 4rem;
+    width: 400px;
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-boneco {
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    text-align: center;
+}
+
+.botao-copiar {
+    height: 640px;
+}
+
+
+
+
+.container-footer {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+}
+
+.foot{
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 4rem;
+    justify-content: center;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 1rem 0;
+    font-size: 14px;
+}
+
+.socials img {
+    width: 30px;
+    height: 30px
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a {
+    text-decoration: none;
+}
+
+.socials a img {
+    transition: .2s ease;
+}
+
+.socials img:hover{
+    background-color: #48f77f;
+    border-radius: 10px;
+    
+}
+
+
+.footer-bottom {
+    background: #000;
+    padding: 9px 0;
+    text-align: center;
+    
+}
+
+
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+} 
+
+
+@media (max-width: 768px) {
+
+    header {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+        flex-direction: column;
+        min-width: 100%;
+    }
+
+    .logo {
+        margin: 10px 0 0 10px;
+        display: flex;
+    }
+
+}
+

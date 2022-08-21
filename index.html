@@ -4,65 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilo/style.css">
     <title>Decodificador</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/footer.css">
 </head>
 <body>
     <header>
-        <img src="./imgs/logo.png" alt="Logo da alura" class="logo">
+        <img src="./imgs/logo.png" alt="Logo alura" class="logo">
     </header>
- 
-    
-        <main class="container">
-        
-                <div class="escreva1">
-                    <textarea class="textoArea" placeholder="Digite seu texto..." ></textarea>
-                    <div class="info">
-                        <img src="./imgs/alert.png" class="alert">
-                        <p class="detalhe">Apenas letras minúsculas e sem acento.</p>  
-                    </div>
-                    
-                    <div class="botoes">
-                        <button  class="encriptar" onclick="btnEncriptar()">Criptografar</button>
-                        <button  class="desencriptar" onclick="btnDesencriptar()">Descriptografar</button> 
-                    </div>
+
+    <main class="container">
+        <div class="container-row-left"> 
+                <div class="container-textarea">
+                <textarea class="textoArea" id="textoArea" placeholder="Digite seu texto..."></textarea>
                 </div>
-                
-                        
-                    <div class="escreva2">
-                        <div class="caixa">
-                            <textarea class="message"></textarea>
-                            <img src="./imgs/High quality products 1 1.png" alt="Imagem boneco" class="imgBoneco">
-                            <h3>Nenhuma mensagem encontrada</h3>
-                            <p class="texto1">Digite um texto que você deseja criptografar ou descriptografar.</p>              
-                        </div>  
 
-                    </div>
-            </main>
+                <div class="info">
+                    <img class="alerta" src="./imgs/alert.png" alt="alerta">
+                    <p>Apenas letras minúsculas e sem acento.</p>
+                </div>
 
-<div class="main-footer">
-    <div class="foot">
-        <!-- <div class="footer-content">
-            <ul class="socials">
-                <li>
-                    <a href="https://github.com/Azt1" class="githubImg">
-                        <img src="./imgs/github.png" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/igor-alexandre-127153234/" class="linkedinImg">
-                        <img src="./imgs/linkedin.png" alt="">
-                    </a>
-                </li>
-            </ul>
-        </div> -->
-        <div class="footer-bottom">
-            Copyright &copy;2022 designed by <span>azt1</span>
+                <div class="botoes">
+                    <button class="encriptar">Encriptar</button>
+                    <button class="descriptografar">Descriptografar</button>
+                </div>
         </div>
-    </div>
-</div>
-    <script src="./index.js"></script>
-</body>
 
+        <div class="container-row-right">
+            <div>
+            <input type="text">
+            </div>
+
+            <div>
+                <img class="imgBoneco" src="./imgs/High quality products 1 1.png" alt="Boneco com a lupa">
+                    <div class="info-boneco">
+                        <h1>Nenhuma mensagem encontrada</h1>
+                        <p>Digite um texto que você deseja criptografar ou descriptografar.</p>  
+                    </div>
+            </div>
+
+            <div class="botao-copiar">
+                <button>Copiar</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="container-footer">
+        <div class="foot">
+            <div class="footer-content">
+                <ul class="socials">
+                    <li>
+                        <a href="https://github.com/Azt1" class="githubImg">
+                            <img src="./imgs/github.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/igor-alexandre-127153234/" class="linkedinImg">
+                            <img src="./imgs/linkedin.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                Copyright &copy;2022 designed by <span>azt1</span>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
