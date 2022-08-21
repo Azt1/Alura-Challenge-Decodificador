@@ -39,7 +39,7 @@ body {
 
 .textoArea {
     width: 120%;
-    background-image: url(/imgs/texture-bottom.jpg);
+    background: transparent;
     font-weight: 400;
     font-size: 28px;
     border-radius: 15px;
@@ -83,7 +83,7 @@ body {
     transition: all 0.2s ease-out
 }
 
-.encriptar {
+.encriptar , .descriptografar {
     background-color: #121214;
     color: #fff;
     border-radius: 25px;
@@ -97,32 +97,29 @@ body {
     height: 80px;
     align-items: center;
 }
-
-.descriptografar {
-    background-color: #121214;
-    color: #fff;
-    border-radius: 25px;
-    padding: 10px;
-    text-transform: uppercase;
-    cursor: pointer;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 200px;
-    height: 80px;
-    align-items: center;
-}
-
-
 
 .container-row-right {
     border: solid 1px white;
-    border-radius: 15px;
     padding: 4rem;
     width: 400px;
     height: 640px;
     display: flex;
     flex-direction: column;
+}
+
+.texto {
+    background: transparent;
+    outline: none;
+    resize: none;
+    border: 0 none;
+    overflow: auto;
+    box-shadow: none; 
+    color: #ffffff;
+    border-radius: 15px;
+}
+
+.imgBoneco {
+    margin-right: 1rem;
 }
 
 .info-boneco {
@@ -133,11 +130,31 @@ body {
 }
 
 .botao-copiar {
-    height: 640px;
+    margin: auto;
+    height: 15px;
 }
 
+.copiar {
+    margin: auto;
+    background-color: #121214;
+    color: #fff;
+    border-radius: 25px;
+    padding: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 200px;
+    height: 80px;
+    align-items: center;
+}
 
-
+.botao-copiar :hover{
+    background-color: #48f77f;
+    color: #000;
+    transition: all 0.2s ease-out
+}
 
 .container-footer {
     bottom: 0;
