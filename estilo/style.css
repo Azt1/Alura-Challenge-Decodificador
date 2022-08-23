@@ -6,7 +6,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
-background-image: url(/imgs/texture-bottom.jpg);
+background-image: url(../imgs/texture-bottom.jpg);
 }
 
 .container {
