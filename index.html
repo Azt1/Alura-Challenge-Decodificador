@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="Pt-Br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,68 +9,69 @@
     <title>Decodificador</title>
 </head>
 <body>
-    <header>
-        <img src="./imgs/logo.png" alt="Logo alura" class="logo">
-    </header>
 
     <main class="container">
-        <div class="container-row-left"> 
-                <div class="container-textarea">
-                <textarea class="textoArea" id="textoArea" placeholder="Digite seu texto..."></textarea>
-                </div>
+
+        <div class="container-logo">
+            <img class="logo" src="./imgs/logo.png" alt="logo da alura"/>
+        </div>
+
+        <div class="container-row-left">
+
+            <input type="text" id="texto" placeholder="Digite seu texto...">
+
+            <div>
 
                 <div class="info">
                     <img class="alerta" src="./imgs/alert.png" alt="alerta">
-                    <p>Apenas letras minúsculas e sem acento.</p>
+                    <p class="info-frase">Apenas letras minúsculas e sem acento.</p>
                 </div>
 
                 <div class="botoes">
-                    <button id="btn-encriptar" class="encriptar">Encriptar</button>
-                    <button id="btn-descriptografar" class="descriptografar">Descriptografar</button>
+                    <button class="btn-encriptar">Encriptar</button>
+                    <button class="btn-descriptografar">Descriptografar</button>
                 </div>
+
+                <div>
+                    <button class="btn-limpar">Limpar</button>
+                </div>
+            </div>
+
         </div>
 
-        <div class="container-row-right">
-            <div>
-            <input class="texto" type="text">
+        <div class="container-row-right  empty">
+
+            <div class="empty-message">
+                <img class="imgBoneco" src="./imgs/High quality products 1 1.png" alt="Boneco com uma lupa"/>
+                <h3 class="info-text-h">
+                    Nenhuma mensagem encontrada
+                </h3>
             </div>
 
-            <div>
-                <img class="imgBoneco" src="./imgs/High quality products 1 1.png" alt="Boneco com a lupa">
-                    <div class="info-boneco">
-                        <h1>Nenhuma mensagem encontrada</h1>
-                        <p class="info-text">Digite um texto que você deseja criptografar ou descriptografar.</p>  
-                    </div>
-            </div>
+            <p class="info-text" title="TOQUE PARA COPIAR!!!">
+                Digite um texto que você deseja criptografar ou descriptografar.
+            </p>
+            <div/>
+        </main>
 
-            <div class="botao-copiar">
-                <button class="copiar">Copiar</button>
-            </div>
-        </div>
-    </main>
+    
+        <footer class="container-footer">
+                <div class="social">
+                    <a href="https://github.com/Azt1" class="githubImg">
+                        <img src="./imgs/github.png" alt="">
+                    </a>
 
-    <footer class="container-footer">
-        <div class="foot">
-            <div class="footer-content">
-                <ul class="socials">
-                    <li>
-                        <a href="https://github.com/Azt1" class="githubImg">
-                            <img src="./imgs/github.png" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/igor-alexandre-127153234/" class="linkedinImg">
-                            <img src="./imgs/linkedin.png" alt="">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-bottom">
-                Copyright &copy;2022 designed by <span>azt1</span>
-            </div>
-        </div>
-    </footer>
+                    <a href="https://www.linkedin.com/in/igor-alexandre-127153234/" class="linkedinImg">
+                        <img src="./imgs/linkedin.png" alt="">
+                    </a>
+                </div>
 
-    <script src="./js/script.js"></script>
+                <div class="footer-profile">
+                    Copyright &copy;2022 designed by <span>azt1</span>
+                </div>
+        </footer>
+
+    <script src="/script.js"></script>
 </body>
+
 </html>
