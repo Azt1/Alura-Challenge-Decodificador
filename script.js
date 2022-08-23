@@ -48,15 +48,20 @@ const button_cript = document.querySelector('.btn-encriptar');
 button_cript.addEventListener('click', function () {
     const texto = document.querySelector('#texto').value;
 
-    const caracter_especiais = /[^a-z A-Z0-9]/g;
+    const caracter_numeros = /[0-9]/g;
     const caracter_uppercases = /[A-Z]/g;
+    const caracter_especiais = /[/[\@#$-/:-?{-~!"^_`[]/g;
 
-    if (texto.match(caracter_especiais)) {
-        alert('Por favor!\nDigite apenas letras e números.');
+    if (texto.match(caracter_numeros)) {
+        alert('Por favor!\nDigite apenas LETRAS.');
         return;
     }
     if (texto.match(caracter_uppercases) != null) {
         alert('Por favor!\nDigite apenas letras minúsculas.');
+        return
+    }
+    if (texto.match(caracter_especiais) != null) {
+        alert('Por favor!\nDigite apenas letras e números.');
         return
     }
 
@@ -78,15 +83,20 @@ const button_decript = document.querySelector('.btn-descriptografar');
 button_decript.addEventListener('click', function () {
     const texto = document.querySelector('#texto').value;
 
-    const caracter_especiais = /[^a-z A-Z0-9]/g;
+    const caracter_numeros = /[0-9]/g;
     const caracter_uppercases = /[A-Z]/g;
+    const caracter_especiais = /[/[\@#$-/:-?{-~!"^_`[]/g;
 
-    if (texto.match(caracter_especiais)) {
-        alert('Por favor!\nDigite apenas letras e números.');
+    if (texto.match(caracter_numeros)) {
+        alert('Por favor!\nDigite apenas LETRAS.');
         return;
     }
     if (texto.match(caracter_uppercases) != null) {
         alert('Por favor!\nDigite apenas letras minúsculas.');
+        return
+    }
+    if (texto.match(caracter_especiais) != null) {
+        alert('Por favor!\nDigite apenas letras e números.');
         return
     }
 
